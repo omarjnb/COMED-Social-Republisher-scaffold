@@ -4,6 +4,7 @@ services:
     runtime: docker
     healthCheckPath: /healthz
     plan: starter
+    plan: free
     envVars:
       - key: COOKIE_SECURE
         value: "true"
@@ -20,3 +21,5 @@ services:
 databases:
   - name: comed-db
     plan: starter
+    # Current Render Postgres plan ID. Free is suitable only for this 30-day pilot.
+    plan: free
