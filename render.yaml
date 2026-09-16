@@ -4,7 +4,6 @@ services:
     runtime: docker
     healthCheckPath: /healthz
     plan: starter
-    plan: free
     envVars:
       - key: COOKIE_SECURE
         value: "true"
